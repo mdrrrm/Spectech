@@ -1,0 +1,54 @@
+.container {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input, select, button, textarea {
+	outline: none;
+}
+
+.page-header {
+	background-color: yellow;
+}
+
+
+
+
+
+/* Главная - промо */
+
+.promo {
+	background-image: url(../img/maru-top.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 180px;
+	text-align: center;
+}
+
+.promo-slogan {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 44px;
+	padding: 130px 0 120px 0;
+}
+
+.promo-title {
+	font-size: 21px;
+	color: #e1e1e1;
+	font-weight: normal;
+	padding: 0 80px;
+}
+
+.promo-btn {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	border: 2px solid yellow;
+	display: inline-block;
+}
