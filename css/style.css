@@ -15,6 +15,26 @@ input, select, button, textarea {
 	background-color: yellow;
 }
 
+.logo {
+
+}
+
+.logo-img {
+
+}
+
+
+.menu {
+
+}
+
+
+.menu li {
+	display: inline-block;
+}
+
+
+
 
 
 
@@ -27,7 +47,8 @@ input, select, button, textarea {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-top: 180px;
+	padding-top: 130px;
+	padding-bottom: 120px;
 	text-align: center;
 }
 
@@ -35,13 +56,12 @@ input, select, button, textarea {
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 44px;
-	padding: 130px 0 120px 0;
 }
 
 .promo-title {
 	font-size: 21px;
 	color: #e1e1e1;
-	font-weight: normal;
+	font-weight: ;
 	padding: 0 80px;
 }
 
