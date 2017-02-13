@@ -1,3 +1,43 @@
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTS55F_W.eot');
+	src:
+	     url('../fonts/PTS55F_W.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/PTS55F_W.woff') format('woff'),
+	     url('../fonts/PTS55F_W.ttf') format('truetype'),
+	     url('../fonts/PTS55F_W.svg#PTSans-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTS75F_W.eot');
+	src:
+	     url('../fonts/PTS75F_W.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/PTS75F_W.woff') format('woff'),
+	     url('../fonts/PTS75F_W.ttf') format('truetype'),
+	     url('../fonts/PTS75F_W.svg#PTSans-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('PTS56F_W.eot');
+	src:
+	     url('../fonts/PTS56F_W.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/PTS56F_W.woff') format('woff'),
+	     url('../fonts/PTS56F_W.ttf') format('truetype'),
+	     url('../fonts/PTS56F_W.svg#PTSans-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+body {
+	font-family: "PTSans", "Arial", sans-serif;
+}
+
 .container {
 	width: 960px;
 	padding: 0 10px;
@@ -7,34 +47,96 @@
 	box-sizing: border-box;
 }
 
+.clearfix:after {
+		content: '';
+	display: block;
+	clear: both;
+}
+
+.container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 input, select, button, textarea {
 	outline: none;
 }
 
 .page-header {
-	background-color: yellow;
+	background-color: #ffcd34;
+	vertical-align: middle;
+	padding: 15px 0;
 }
 
 .logo {
-
+	float: left;
+	width: 200px;
+	margin-top: 5px;
+	text-decoration: none;
+	border: none;
 }
 
 .logo-img {
-
+	display: inline-block;
+	vertical-align: middle;
 }
 
+.logo-text {
+	display: inline-block;
+	vertical-align: middle;
+	color: #000;
+	font-size: 24px;
+	text-decoration: none;
+	margin: 0;
+}
 
 .menu {
-
+	float: left;
+	width: 556px;
+	text-align: right;
+	padding-right: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
+.menu ul {
+	margin: 0;
+	padding-left: 0;
+} 
 
 .menu li {
 	display: inline-block;
 }
 
+.menu a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #000;
+	padding: 12px;
+	display: inline-block;
+	border: 2px solid transparent;
+}
 
+.menu a:hover {
+	border: 2px solid #202e3b;
+}
 
+.order-call {
+	width: 174px;
+	padding: 14px;
+	float: right;
+	font-size: 16px;
+	background-color: #ffe184;
+	border: none;
+	transition: all .3s ease;
+}
+
+.order-call:hover {
+	background-color: #ffecb2;
+	cursor: pointer;
+}
 
 
 
@@ -42,7 +144,7 @@ input, select, button, textarea {
 /* Главная - промо */
 
 .promo {
-	background-image: url(../img/maru-top.jpg);
+	background-image: url(../img/index_background.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -56,19 +158,122 @@ input, select, button, textarea {
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 44px;
+	font-weight: bold;
 }
 
 .promo-title {
-	font-size: 21px;
+	font-size: 20px;
 	color: #e1e1e1;
-	font-weight: ;
-	padding: 0 80px;
+	font-weight: normal;
+	width: 620px;
+	margin: 32px auto;
 }
 
 .promo-btn {
 	color: #fff;
 	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
 	padding: 10px;
 	border: 2px solid yellow;
 	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONSULT*/
+
+.consult {
+	background-color: #202e3b;
+	padding: 34px 10px 40px;
+}
+
+.consult-title {
+	color: #ffcd34;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.consult-input_form {
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 15px;
+	border: 1px solid #ffcd24;
+	background-color: transparent;
+}
+
+.consult-btn {
+	width: 220px;
+	float: left;
+	background-color: #ffcd24;
+	padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/*				Advantages 				*/
+
+.advantages {
+	font-size: 0;
+}
+
+.advantages-item {
+	display: inline-block;
+	width: 25%;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.advantages-item-tools > p:before {
+	content: " ";
+	display: block;
+	width: 42px;
+	height: 42px;
+	background: url(../img/tools.svg)
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+
+
+
+
+
+/*			Equipment 			*/
+
+.equipment {
+	background-color: #f3f3f3;
+}
+
+.equipment-title {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.equipment-nav-list a {
+	font-size: 16px;
+	color: #202e3b;
+	
 }
