@@ -3,79 +3,80 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Спецтех24</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
-		<a href="#" class="logo">
-			<img src="http://placehold.it/75x75" alt="logo" class="logo-img">
-			<span class="logo-text"><b>Спецтех</b>24
-			</span>
-		</a>
-		<nav class="menu">
-			<ul>
-				<li><a href="index.html" class="active">О компании</a></li>
-				<li><a href="catalogue.html">Каталог</a></li>
-				<li><a href="portfolio.html">Портфолио</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-				<li class="order-call"><a href="#">Заказать звонок</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<a href="#" class="logo">
+				<img src="img/logo.svg" alt="logo" class="logo-img">
+				<p class="logo-text"><b>Спецтех</b>24
+				</p>
+			</a>
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">О компании</a></li>
+					<li><a href="catalogue.html" class="current">Каталог</a></li>
+					<li><a href="portfolio.html">Портфолио</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+			<button class="order-call">Заказать звонок</button>
+		</div>
 	</header>
 
 <main>
-	<div class="container">
-		<div class="catalogue-consult">
+		<div class="catalogue-subheader">
+		<div class="container">
 			<h1 class="catalogue-title">
-				<p>Экскаваторы в аренду</p>
+				Техника: Экскаваторы в аренду
 			</h1>
 			<p class="catalogue-caption">Спецтех это безотказная техника, принципиально новый уровень сервиса и качества. Если вы искали идеальных партнёров на объект — вы нашли их. Что понадобится вам сегодня?</p>
-			<a href="#" class="catalogue-consult-btn">Мне нужна консультация</a>
-			<p class="catalogue-caption">Оставьте заявку, и уже сегодня мы вам перезвоним</p>	
+			<a href="#" class="catalogue-subheader-btn">Мне нужна консультация</a>
+			<p class="catalogue-btn-caption">Оставьте заявку, и уже сегодня мы вам перезвоним</p>	
 		</div>	
 	</div>
 
+<section class="catalogue">
 	<div class="container">
 		<div class="catalogue-nav">
-			<h2 class="catalogue-nav-title"></h2>
+			<h2 class="catalogue-nav-title">Вся техника</h2>
 			<ul>
 				<li><a href="#" class="catalogue-nav-item">Гусеничные экскаваторы</a></li>
-				<li><a href="#" class="catalogue-nav-item">Колёсные экскаваторы</a></li>
+				<li><a href="#" class="catalogue-nav-item catalogue-nav-current">Колёсные экскаваторы</a></li>
 				<li><a href="#" class="catalogue-nav-item">Мини-экскаваторы</a></li>
 				<li><a href="#" class="catalogue-nav-item">Автокраны</a></li>
 				<li><a href="#" class="catalogue-nav-item">Фронтальные погрузчики</a></li>
 				<li><a href="#" class="catalogue-nav-item">Навесное оборудование</a></li>
 				<li><a href="#" class="catalogue-nav-item">Дизельгенераторы</a></li>
 			</ul>
-			<a href="#" class="catalogue-nav-btn">Скачать каталог в PDF</a>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="catalogue-list">
+			<a href="#" class="catalogue-nav-btn">Скачать каталог в PDF</a>		</div>	
+			<div class="catalogue-list clearfix">
 			<div class="catalogue-item">
 				<h3 class="catalogue-item-title">Cat M315D</h3>
-				<img src="" alt="Cat M315D">
+				<img src="img/pics/cat_m315d.png" alt="Cat M315D">
 				<p class="catalogue-item-price">25 000 / месяц</p>
 				<a href="" class="catalogue-item-btn">Арендовать</a>
 				<a href="" class="catalogue-item-btn">Подробнее</a>
 			</div>
 			<div class="catalogue-item">
 				<h3 class="catalogue-item-title">Cat M315D</h3>
-				<img src="" alt="Cat M315D">
+				<img src="img/pics/cat_m315d.png" alt="Cat M315D">
+				<p class="catalogue-item-price">25 000 / месяц</p>
+				<a href="" class="catalogue-item-btn">Арендовать</a>
+				<a href="" class="catalogue-item-btn">Подробнее</a>
+			</div>
+			<div class="catalogue-item">
+				<h3 class="catalogue-item-title catalogue-new">Cat M315D</h3>
+				<img src="img/pics/cat_m315d.png" alt="Cat M315D">
 				<p class="catalogue-item-price">25 000 / месяц</p>
 				<a href="" class="catalogue-item-btn">Арендовать</a>
 				<a href="" class="catalogue-item-btn">Подробнее</a>
 			</div>
 			<div class="catalogue-item">
 				<h3 class="catalogue-item-title">Cat M315D</h3>
-				<img src="" alt="Cat M315D">
-				<p class="catalogue-item-price">25 000 / месяц</p>
-				<a href="" class="catalogue-item-btn">Арендовать</a>
-				<a href="" class="catalogue-item-btn">Подробнее</a>
-			</div>
-			<div class="catalogue-item">
-				<h3 class="catalogue-item-title">Cat M315D</h3>
-				<img src="" alt="Cat M315D">
+				<img src="img/pics/cat_m315d.png" alt="Cat M315D">
 				<p class="catalogue-item-price">25 000 / месяц</p>
 				<a href="" class="catalogue-item-btn">Арендовать</a>
 				<a href="" class="catalogue-item-btn">Подробнее</a>
@@ -83,13 +84,15 @@
 		</div>
 		<div class="catalogue-pages">
 			<ul>
-				<li><a href="#" class="catalogue-pages-item">1</a></li>
+				<li><a href="#" class="catalogue-pages-item current-page">1</a></li>
 				<li><a href="#" class="catalogue-pages-item">2</a></li>
 				<li><a href="#" class="catalogue-pages-item">3</a></li>
 				<li><a href="#" class="catalogue-pages-item">4</a></li>
 			</ul>
 		</div>
 	</div>
+</section>
+
 
 <div class="container">
 	<div class="catalogue-promo">
@@ -120,21 +123,22 @@
 
 </main>
 
-		<footer class="page-footer">
-		<a href="#" class="logo">
-			<img src="http://placehold.it/75x75" alt="logo" class="logo-img">
-			<span class="logo-text"><b>Спецтех</b>24
-			</span>
-		</a>
-		<nav class="menu">
-			<ul>
-				<li><a href="index.html" class="active">О компании</a></li>
-				<li><a href="catalogue.html">Каталог</a></li>
-				<li><a href="portfolio.html">Портфолио</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-				<li class="order-call"><a href="#">Заказать звонок</a></li>
-			</ul>
-		</nav>
-	</footer>
+			<footer class="page-footer clearfix">
+				<div class="container">
+				<a href="#" class="logo">
+					<img src="img/logo-white.svg" alt="logo" class="logo-img">
+					<span class="logo-text"><b>Спецтех</b>24</span>
+				</a>
+				<nav class="footer-menu">
+					<ul>
+						<li><a href="index.html">О компании</a></li>
+						<li><a href="catalogue.html">Каталог</a></li>
+						<li><a href="portfolio.html">Портфолио</a></li>	
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="footer-order-call">Заказать звонок</a>
+				</div>
+			</footer>
 </body>
 </html>
