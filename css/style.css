@@ -68,6 +68,19 @@ input, select, button, textarea {
 	background-color: #ffcd34;
 	vertical-align: middle;
 	padding: 15px 0;
+	position: relative;
+}
+
+.page-header:after, .promo:after {
+	content: '';
+	display: block;
+	height: 14px;
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	bottom: -14px;
+	background-color: #daf;
+	background: repeating-linear-gradient(-45deg, #000, #000 5px, #ffcd24 6px, #ffcd24 11px);
 }
 
 .logo {
@@ -81,6 +94,7 @@ input, select, button, textarea {
 .logo-img {
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 13px;
 }
 
 .logo-text {
@@ -154,6 +168,11 @@ input, select, button, textarea {
 
 
 
+
+
+
+
+
 /* Главная - промо */
 
 .promo {
@@ -165,16 +184,9 @@ input, select, button, textarea {
 	padding-top: 130px;
 	padding-bottom: 120px;
 	text-align: center;
+	position: relative;
 }
 
-.promo:before {
-	content: '';
-	display: block;
-	height: 14px;
-	z-index: 2;
-	position: absolute;
-	top: 0;
-}
 
 .promo-slogan {
 	text-transform: uppercase;
@@ -196,9 +208,10 @@ input, select, button, textarea {
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
-	padding: 10px;
+	padding: 10px 50px 10px 10px;
 	border: 2px solid #ffcd24;
 	display: inline-block;
+	position: relative;
 }
 
 .promo-btn:hover {
@@ -209,8 +222,21 @@ input, select, button, textarea {
 	border-color: #ffe390;
 }
 
-
-
+.promo-btn:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-right: 4px solid #fff;
+	border-top: 4px solid #fff;
+	position: absolute;
+	right: 24px;
+	top: 14px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
 
 
 
@@ -247,6 +273,47 @@ input, select, button, textarea {
 	padding: 15px;
 	border: 1px solid #ffcd24;
 	background-color: transparent;
+	position: relative;
+	font-size: 16px;
+}
+
+input[type=date] {
+	padding: 14px 15px;
+}
+
+input[type=date]::-webkit-inner-spin-button, input::-webkit-clear-button {
+    -webkit-appearance: none;
+    display: none;
+    margin: 0;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    display: inline;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 19px;
+    top: 15px;
+    z-index: 2;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+input[type=date]:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;	
+	border-right: 10px solid transparent;	
+	border-top: 10px solid #ffcd24;	
+	position: absolute;
+	top: 21px;
+	right: 22px;
 }
 
 .consult-btn {
@@ -257,6 +324,7 @@ input, select, button, textarea {
 	border: none;
 	font-weight: 700;
 	border: 1px solid #ffcd24;
+	cursor: pointer;
 }
 
 
@@ -670,7 +738,7 @@ padding: 13px 14px 13px 14px;
 }
 
 .catalogue-subheader-btn {
-	/*float: right;*/
+	float: right;
 	background-color: #ffcd24;
 	padding: 15px;
 	text-decoration: none;
@@ -842,6 +910,10 @@ padding: 13px 14px 13px 14px;
 
 .offer-item del {
 	color: #d12222;
+}
+
+.offer-item .catalogue-item-price {
+	font-size: 22px;
 }
 
 
