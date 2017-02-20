@@ -673,19 +673,6 @@ padding: 13px 14px 13px 14px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*           Footer            */
 
 .page-footer {
@@ -1024,6 +1011,28 @@ padding: 13px 14px 13px 14px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*								Portfolio                 */
 
 
@@ -1033,7 +1042,6 @@ padding: 13px 14px 13px 14px;
  -webkit-background-size: cover;
  background-size: cover;	
  height: 106px;	
- 	margin-bottom: 10px;
 }
 
 .portfolio-subheader .container {
@@ -1045,7 +1053,8 @@ padding: 13px 14px 13px 14px;
 }
 
 .portfolio-subheader h1 {
-margin: 0 ;
+margin-top: 11px;
+margin-bottom: 11px;
 font-size: 24px;
 font-weight: 400;
 color: #FFCD24;
@@ -1065,11 +1074,30 @@ color: #fff;
 text-decoration: underline;
 }
 
+.portfolio-subheader-item:hover {
+	font-weight: 700;
+}
+
+.portfolio-subheader-item:active {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.works {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #000;
+}
+
 div[class*=works-item] {
 	background-repeat: no-repeat;	
 	-webkit-background-size: cover;
 	background-size: cover;	
 	margin-bottom: 10px;
+}
+
+div[class*=works-item]:last-child {
+	margin-bottom: 0;	
 }
 
 div[class*=works-item] .container {
@@ -1091,29 +1119,61 @@ div[class*=works-item] .container {
 
 .works-caption {
 	background-color: #fff;
-	padding: 27px 30px;	
+	padding: 27px 29px;	
 	float: left;
 	width: 322px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .works-title {
 	font-size: 20px;
 	font-weight: 700;
 	margin-top: 0;
+	line-height: 1.3;
 }
 
 .works-text {
 	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 20px;
 }
 
 .works-btn {
 	display: inline-block;
 	background-color: #ffcd24;
-	padding: 15px;
+	padding: 10px 33px 10px 16px;
 	text-decoration: none;
 	font-weight: 700;
-	color: #000;
-	border: 1px solid #ffcd24;
+	color: #1d333f;
+	border: 1px solid #ffcd34;
+	position: relative;
+}
+
+.works-btn:hover {
+	background-color: #ffd966;
+}
+
+.works-btn:active {
+	background-color: #f6bf16;
+}
+
+.works-btn:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-right: 4px solid #1d333f;
+	border-top: 4px solid #1d333f;
+	position: absolute;
+	right: 14px;
+	top: 14px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
 }
 
 
