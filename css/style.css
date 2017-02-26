@@ -71,7 +71,7 @@ input, select, button, textarea {
 .page-header {
 	position: relative;
 	vertical-align: middle;
-	padding: 15px 0;
+	padding: 15px 0 14px;
 	margin-bottom: 14px;
 	background-color: #ffcd34;
 }
@@ -85,13 +85,14 @@ input, select, button, textarea {
 	height: 14px;
 	width: 100%;
 	background-color: #daf;
-	background: repeating-linear-gradient(-45deg, #000000, #000000 5px, #ffcd24 6px, #ffcd24 11px);
+	background: repeating-linear-gradient(-48deg, #000000, #000000 8px, #ffcd24 9px, #ffcd24 15px);
 }
 
 .logo {
 	float: left;
 	width: 200px;
-	margin-top: 5px;
+	margin-top: 4px;
+	padding-left: 1px;
 	text-decoration: none;
 	border: none;
 	cursor: pointer;
@@ -100,14 +101,16 @@ input, select, button, textarea {
 .logo-img {
 	vertical-align: middle;
 	display: inline-block;
-	margin-right: 13px;
+	margin-right: 11px;
 }
 
 .logo-text {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0;
+	margin-top: -3px;
 	font-size: 24px;
+	letter-spacing: 0.01em;
 	text-decoration: none;
 	color: #000;
 }
@@ -129,6 +132,11 @@ input, select, button, textarea {
 
 .menu li {
 	display: inline-block;
+	margin-left: 2px;
+}
+
+.menu li:first-child {
+	padding-right: 2px;
 }
 
 .menu a {
@@ -156,8 +164,9 @@ input, select, button, textarea {
 .order-call {
 	float: right;
 	width: 174px;
-	padding: 14px;
+	padding: 14px 10px 14px 4px;
 	font-size: 16px;
+	letter-spacing: 0.005em;
 	background-color: #ffe184;
 	border: none;
 	transition: all 0.3s ease;
@@ -185,8 +194,8 @@ input, select, button, textarea {
 .promo {
 	position: relative;
 	margin-bottom: 14px;
-	padding-top: 130px;
-	padding-bottom: 120px;
+	padding-top: 129px;
+	padding-bottom: 118px;
 	text-align: center;
 	background-image: url(../img/index_background.jpg);
 	-webkit-background-size: cover;
@@ -197,30 +206,35 @@ input, select, button, textarea {
 
 
 .promo-slogan {
+	padding-left: 13px;
 	text-transform: uppercase;
 	font-size: 44px;
 	font-weight: bold;
+	letter-spacing: 0.007em;
 	color: #ffffff;
 }
 
 .promo-title {
 	width: 620px;
-	margin: 32px auto;
+	margin: 19px auto 30px;
 	color: #e1e1e1;
 	font-size: 20px;
 	font-weight: normal;
+	letter-spacing: -0.002em;
 }
 
 .promo-btn {
 	position: relative;
 	display: inline-block;
-	padding: 10px 50px 10px 10px;
+	padding: 9px 53px 13px 20px;
+	margin-left: -4px;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
 	color: #ffffff;
 	border: 2px solid #ffcd24;
 	transition: all 0.3s ease;
+	cursor: pointer;
 }
 
 .promo-btn:hover {
@@ -235,10 +249,10 @@ input, select, button, textarea {
 	content: '';
 	display: block;
 	position: absolute;
-	right: 24px;
+	right: 27px;
 	top: 14px;
-	width: 10px;
-	height: 10px;
+	width: 9px;
+	height: 9px;
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
@@ -255,14 +269,14 @@ input, select, button, textarea {
 /*CONSULT*/
 
 .consult {
-	padding: 34px 10px 40px;
+	padding: 30px 10px 40px;
 	font-size: 16px;
 	font-weight: normal;
 	background-color: #202e3b;
 }
 
 .consult-title {
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	font-size: 24px;
 	font-weight: normal;
 	color: #ffcd34;
@@ -273,7 +287,7 @@ input, select, button, textarea {
 	position: relative;
 	width: 220px;
 	height: 45px;
-	padding: 15px;
+	padding: 14px 15px 16px 18px;
 	margin-right: 20px;
 	font-size: 16px;
 	color: #ffffff;
@@ -337,7 +351,7 @@ input[type=date]:after {
 	float: left;
 	width: 220px;
 	height: 45px;
-	padding: 13px 15px;
+	padding: 11px 15px 14px;
 	font-size: 18px;
 	font-weight: 700;
 	border: 1px solid #ffcd34;
@@ -367,7 +381,7 @@ input[type=date]:after {
 /*				Advantages 				*/
 
 .advantages {
-	padding-top: 45px;
+	padding-top: 44px;
 	padding-bottom: 45px;
 	font-size: 0;
 }
@@ -375,7 +389,7 @@ input[type=date]:after {
 .advantages-item {
 	vertical-align: top;
 	display: inline-block;
-	margin-right: 28px;
+	margin-right: 26px;
 	font-size: 13px;
 	line-height: 16px;
 }
@@ -384,10 +398,20 @@ input[type=date]:after {
 	margin-right: 0;
 }
 
+.advantages-item-worker {
+	margin-right: 30px;
+}
+
+.advantages-item-border {
+	margin-right: 33px;
+}
+
 .advantages-item p {
+	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	float: left;
-	line-height: 1.1;
+	line-height: 1.3;
 }
 
 .advantages-item-tools p {
@@ -410,10 +434,11 @@ input[type=date]:after {
 [class^=advantages-item]:before {
 	content: '';
 	float: left;
-	vertical-align: top;
+	vertical-align: middle;
 	display: inline-block;
 	height: 40px;
-	margin-right: 17px;
+	margin-right: 21px;
+	margin-top: 4px;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100%;
 	background-size: contain;
@@ -428,6 +453,7 @@ input[type=date]:after {
 
 .advantages-item-worker:before {
 	width: 46px;
+	margin-right: 18px;
 	background-image: url(../img/worker.svg);
 }
 
@@ -439,8 +465,9 @@ input[type=date]:after {
 }
 
 .advantages-item-operator:before {
-	width: 38px;
+	width: 35px;
 	margin-right: 16px;
+	margin-top: 2px;
 	background-image: url(../img/operator.svg);
 }
 
@@ -470,7 +497,7 @@ input[type=date]:after {
 }
 
 .equipment .container {
-	padding: 46px 10px;
+	padding: 38px 10px 45px;
 }
 
 .equipment-title {
@@ -480,7 +507,7 @@ input[type=date]:after {
 }
 
 .equipment-nav .equipment-title {
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .equipment-nav {
@@ -496,7 +523,7 @@ input[type=date]:after {
 }
 
 .equipment-nav-list li {
-	line-height: 40px;
+	line-height: 38px;
 }
 
 .equipment-nav-list a {
@@ -511,12 +538,12 @@ input[type=date]:after {
 
 .equipment-table {
 	width: 700px;
-	line-height: 0.8;
+	line-height: 0.65;
 	border-collapse: collapse;
 }
 
 .equipment-table td{
-	padding: 13px 14px 13px 14px;
+	padding: 13px 12px 13px 12px;
 }
 
 .equipment-table thead {
@@ -528,7 +555,21 @@ input[type=date]:after {
 	background-color: #ffffff;
 }
 
+.equipment-table td:nth-child(4n+1) {
+	padding-left: 15px;
+}
 
+.equipment-table td:nth-child(4n+2) {
+	padding-left: 15px;
+}
+
+.equipment-table td:nth-child(4n+3) {
+	padding-left: 15px;
+}
+
+.equipment-table td:nth-child(4n+4) {
+	padding-left: 15px;
+}
 
 
 
@@ -550,12 +591,12 @@ input[type=date]:after {
 .about {
 	position: relative;
 	margin-bottom: 14px;
+	padding: 41px 0 51px;
 	background-color: #202e3b;
 }
 
 .numbers-title {
-	margin-top: 45px;
-	margin-bottom: 30px;
+	margin-bottom: 26px;
 	font-size: 26px;
 	color: #ffffff;
 }
@@ -569,6 +610,7 @@ input[type=date]:after {
 .numbers-list {
 	padding-left: 0;
 	margin-top: 0;
+	margin-left: -2px;
 }
 
 .numbers-list li {
@@ -578,7 +620,7 @@ input[type=date]:after {
 .numbers-list p  {
 	display: inline-block;
 	vertical-align: middle;
-	margin-bottom: 21px;
+	margin-bottom: 18px;
 	margin-top: 0;
 }
 
@@ -586,11 +628,15 @@ input[type=date]:after {
 	font-size: 18px;
 	font-weight: 700;
 	color: #9e9e9e;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 12px;
 }
 
 
 .numbers-number {
-	margin-right: 20px;
+	margin-right: 18px;
 	margin-top: 0;
 	font-weight: 700;
 	font-size: 38px;
@@ -598,8 +644,7 @@ input[type=date]:after {
 }
 
 .reviews-title {
-	margin-top: 45px;
-	margin-bottom: 40px;	
+	margin-bottom: 35px;	
 	font-size: 26px;
 	font-weight: bold;
 	color: #ffffff;
@@ -622,7 +667,7 @@ input[type=date]:after {
 }  
 
 .reviews-item:last-child {
-	margin-bottom: 51px;
+	margin-bottom: 0;
 }
 
 .reviews-img {
@@ -649,13 +694,16 @@ input[type=date]:after {
 
 .reviews-text {
 	float: left;
-	margin: 0 0 17px 0;
+	margin: -4px 0 11px 2px;
 	font-style: italic;
 	font-size: 18px;
+	line-height: 1.2;
 }
 
 .reviews-author {
 	float: left;
+	margin-left: 2px;
+	font-size: 18px;
 	font-weight: bold;
 	font-style: normal;
 	color: #ffcd24;
@@ -682,14 +730,18 @@ input[type=date]:after {
 
 .page-footer {
 	vertical-align: middle;
-	padding: 15px 0;
+	padding: 12px 0 15px;
 	background-color: #202e3b;
+}
+
+.page-footer .container {
+	padding: 0 10px 0 11px;
 }
 
 .page-footer .logo-text {
 	vertical-align: middle;
 	display: inline-block;
-	margin: 0;
+	margin: 0 0 3px;
 	font-size: 24px;
 	color: #ffcd24;
 	text-decoration: none;
@@ -712,6 +764,7 @@ input[type=date]:after {
 
 .footer-menu li {
 	display: inline-block;
+	margin-left: 2px;
 }
 
 .footer-menu a {
@@ -737,7 +790,7 @@ input[type=date]:after {
 .footer-order-call {
 	float: right;
 	width: 174px;
-	padding: 14px;
+	padding: 14px 28px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -790,17 +843,21 @@ input[type=date]:after {
 .catalogue-subheader {
 	height: 190px;
 	margin: 0;
+	padding-top: 43px;
+	padding-bottom: 30px;
 	background-image: url(../img/catalogue_header.jpg);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.catalogue-subheader .container {
+/*.catalogue-subheader .container {
 	margin-top: 0;
-	padding-top: 40px;
 	margin-bottom: 30px;
-}
+}*/
 
 .catalogue-title {
 	float: left;
@@ -813,6 +870,8 @@ input[type=date]:after {
 
 .catalogue-caption {
 	float: left;
+	margin-top: 11px;
+	margin-bottom: 0;
 	padding-right: 20px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -826,10 +885,11 @@ input[type=date]:after {
 .catalogue-subheader-btn {
 	display: inline-block;
 	width: 240px;
-	padding: 15px;
+	padding: 11px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font-size: 18px;
 	font-weight: 700;
 	color: #000000;
 	text-align: center;
@@ -853,19 +913,21 @@ input[type=date]:after {
 
 .catalogue-btn-caption {
 	float: right;
+	margin-top: 13px;
+	margin-bottom: 0;
 	color: #ffffff;
 	line-height: 20px;
 	width: 240px;
 }
 
 .catalogue {
+	padding-top: 25px;
 	background-color: #f3f3f3;
 }
 
 .catalogue-nav {
 	float: left;
 	width: 220px;
-	margin-top: 30px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -883,7 +945,8 @@ input[type=date]:after {
 .catalogue-nav-title:before {
 	content: '';
 	display: inline-block;
-	vertical-align: bottom;
+	margin-bottom: -2px;
+	margin-left: 1px;
 	width: 31px;
 	height: 24px;
 	margin-right: 15px;
@@ -898,18 +961,18 @@ input[type=date]:after {
 .catalogue-nav li {
 	list-style: none;
 	padding-left: 0;
-	line-height: 34px;
 }
 
 .catalogue-nav ul {
 	margin-top: 0;
-	padding-left: 0;
-	margin-bottom: 27px;
+	padding-left: 1px;
+	margin-bottom: 17px;
 }
 
 .catalogue-nav-item {
 	color: #353535;
 	display: inline-block;
+	line-height: 2.38em;
 }
 
 .catalogue-nav-item:hover {
@@ -931,10 +994,11 @@ input[type=date]:after {
 .catalogue-nav-current:before {
 	content: '';
 	display: inline-block;
-	vertical-align: baseline;
+	vertical-align: middle;
 	width: 6px;
 	height: 6px;
-	margin-right: 10px;
+	margin-right: 11px;
+	margin-left: -3px;
 	border-right: 2px solid #000000;
 	border-top: 2px solid #000000;
 	-ms-transform: rotate(45deg);
@@ -947,10 +1011,10 @@ input[type=date]:after {
 	display: inline-block;
 	background-color: #354b60;
 	color: #fff;
-	padding: 12px 10px;
+	padding: 9px 11px;
 	text-decoration: none;
 	font-size: 16px;
-	width: 220px;
+	width: 221px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -986,9 +1050,8 @@ input[type=date]:after {
 .catalogue-list {
 	width: 620px;
 	float: right;
-	margin-top: 30px;
-/*	margin-bottom: 113px;*/
 	clear: right;
+	margin-top: 4px;
 }
 
 .catalogue-item {
@@ -998,7 +1061,7 @@ input[type=date]:after {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
-	padding: 26px 30px 32px;
+	padding: 22px 29px 32px;
 	margin-bottom: 20px;
 }
 
@@ -1008,14 +1071,30 @@ input[type=date]:after {
 
 .catalogue-item-title {
 	margin-top: 0;
-	margin-bottom: 32px;
+	margin-bottom: 27px;
 	font-weight: 700;
 	font-size: 21px;
+	line-height: 1.25;
+}
+
+.catalogue-item img {
+	margin-left: 14px;
 }
 
 .catalogue-item-price {
+	margin-top: 35px;	
+	margin-bottom: 19px;	
 	font-size: 27px;
 	font-weight: 700;
+}
+
+.catalogue-item-price21{
+	font-size: 21px;
+}
+
+.catalogue-item-price18{
+	margin-left: -1px;
+	font-size: 18px;
 }
 
 .catalogue-item-btn {
@@ -1063,12 +1142,12 @@ input[type=date]:after {
 .catalogue-new:before {
 	content: 'new';
 	position: absolute;
-	top: 10px;
-	right: -25px;
+	top: 8px;
+	right: -26px;
 	display: block;
 	width: 100px;
-	height: 30px;
-	padding: 3px;
+	height: 34px;
+	padding: 7px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1084,9 +1163,7 @@ input[type=date]:after {
 }
 
 .catalogue-pages {
-		/*float: right;*/
-	/*width: 620px;*/
-	padding-top: 26px;
+	padding-top: 28px;
 	padding-bottom: 46px;
 	text-align: center;
 }
@@ -1102,10 +1179,10 @@ input[type=date]:after {
 
 .catalogue-pages-item {
 	display: inline-block;
-	width: 21px;
-	height: 21px;
+	width: 22px;
+	height: 22px;
 	/*border-radius: 3px;*/
-	margin: 0 4px;
+	margin: 0 2px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1135,19 +1212,20 @@ input[type=date]:after {
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-top: 44px;
-	padding-bottom: 49px;
+	padding-top: 39px;
+	padding-bottom: 31px;
 }
 
 .catalogue-promo-title {
 	font-size: 26px;
 	font-weight: bold;
 	color: #fff;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .offer-item {
 	margin-right: 20px;
+	padding-bottom: 34px;
 }
 
 .offer-item:last-child {
@@ -1155,11 +1233,20 @@ input[type=date]:after {
 }
 
 .offer-item del {
+	margin-right: 13px;
 	color: #d12222;
 }
 
 .offer-item .catalogue-item-price {
+	margin-top: 39px;
+	margin-left: 2px;
+	margin-bottom: 20px;
 	font-size: 22px;
+}
+
+.offer-item .catalogue-item-btn {
+	font-size: 17px;
+	padding: 7px 9px 10px;
 }
 
 .catalogue-item-sale {
@@ -1170,12 +1257,12 @@ input[type=date]:after {
 .catalogue-item-sale:before {
 	content: 'sale';
 	position: absolute;
-	top: 10px;
-	right: -25px;
+	top: 7px;
+	right: -27px;
 	display: block;
 	width: 100px;
-	height: 30px;
-	padding: 3px;
+	height: 34px;
+	padding: 6px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1225,7 +1312,7 @@ input[type=date]:after {
 }
 
 .portfolio-subheader .container {
-	padding: 30px 0 30px;
+	padding: 26px 8px 30px;
 	height: 106px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -1238,6 +1325,7 @@ input[type=date]:after {
 	margin-bottom: 11px;
 	font-size: 24px;
 	font-weight: 400;
+	letter-spacing: 0.01em;
 	color: #FFCD24;
 }
 
